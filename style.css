@@ -1,0 +1,69 @@
+h1{
+    color: red;
+}
+
+.commune{
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background: lightgray;
+    margin-left: 100px;
+}
+
+
+#unique1{
+    background: bisque;
+    animation: stef 50s linear infinite ;
+}
+
+@keyframes stef {
+    0% {
+        transform: rotate(0deg) translate(0px);
+    }
+    25% {
+        transform: rotate(90deg) translate(50px) ;
+    }
+    50% {
+        transform: rotate(180deg) translate(0px);
+    }
+    75% {
+        transform: rotate(250deg) translate(50px);
+    }
+    100% {
+        transform: rotate(360deg) translate(0px);
+    }
+}
+
+@keyframes troisD{
+    0% {
+        transform: perspective(100px) translate3d(0,0,0);
+    }
+    25% {
+        transform: perspective(100px) translate3d(0,0,-100px);
+    }
+    50%{
+        transform: perspective(100px) translate3d(0,0,0);
+    }
+    75% {
+        transform: perspective(100px) translate3d(0,0,50px);
+    }
+    100% {
+        transform: perspective(100px) translate3d(0,0,0);
+    }
+}
+
+#unique2{
+    background: burlywood;
+    animation: stef 50s linear infinite reverse;
+}
+
+#unique3{
+    background: darkkhaki;
+    animation: troisD 10s linear infinite ;
+}
+
+#unique4{
+    background: dimgray;
+    animation: troisD 10s linear infinite reverse;
+}
